@@ -27,7 +27,7 @@ or
 ### Get the Dominant Color from an Image
 
 ```js
-const { getColorFromURL } = require('color-thief');
+const { getColorFromURL } = require('color-thief-node');
 
 (async () => {
     const dominantColor = await getColorFromURL(imageURL);
@@ -37,7 +37,7 @@ const { getColorFromURL } = require('color-thief');
 ### Build a Color Palette from an Image
 
 ```js
-const { getPaletteFromURL } = require('color-thief');
+const { getPaletteFromURL } = require('color-thief-node');
 
 (async () => {
     const colorPallete = await getPaletteFromURL(imageURL);
