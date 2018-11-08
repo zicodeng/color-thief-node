@@ -1,7 +1,7 @@
 {
   "name": "color-thief-node",
   "version": "1.0.0",
-  "description": "Color thief reimplementation in Node.js",
+  "description": "Color thief reimplementation for Node.js",
   "main": "./src/color-thief.js",
   "scripts": {
     "test": "node ./test/index.test.js"
