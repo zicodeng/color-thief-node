@@ -1,6 +1,6 @@
 {
   "name": "color-thief-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Color thief reimplementation for Node.js",
   "main": "./src/color-thief.js",
   "scripts": {
