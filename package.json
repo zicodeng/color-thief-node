@@ -1,0 +1,33 @@
+{
+  "name": "color-thief-node",
+  "version": "1.0.0",
+  "description": "Color thief reimplementation in Node.js",
+  "main": "./src/color-thief.js",
+  "scripts": {
+    "test": "node ./test/index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zicodeng/color-thief-node.git"
+  },
+  "keywords": [
+    "color",
+    "dominant-color",
+    "image-color",
+    "color-thief",
+    "node",
+    "node.js"
+  ],
+  "author": "Zico Deng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zicodeng/color-thief-node/issues"
+  },
+  "homepage": "https://github.com/zicodeng/color-thief-node#readme",
+  "dependencies": {
+    "canvas": "^2.1.0"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.1"
+  }
+}
