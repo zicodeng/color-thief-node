@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/zicodeng/color-thief-node#readme",
   "dependencies": {
-    "canvas": "^2.1.0"
+    "canvas": "^2.5.0"
   },
   "devDependencies": {
     "chalk": "^2.4.1"
