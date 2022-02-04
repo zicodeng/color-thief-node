@@ -113,6 +113,35 @@ exports.getColor = (sourceImage, quality) => {
  * BUGGY: Function does not always return the requested amount of colors.
  * It can be +/- 2.
  *
+ * @param {HTMLImageElement} sourceImage
+ *     The HTML image element to pull the color palette from.
+ *
+ * @param {number=} colorCount
+ *     Determines the size of the palette; the number of colors returned.
+ *     If not set, it defaults to 5.
+ *
+ * @param {number=} quality
+ *     Quality is an optional argument. It needs to be an integer.
+ *     1 is the highest quality settings. 5 is the default.
+ *     There is a trade-off between quality and speed. The bigger
+ *     the number, the faster the palette generation but the greater
+ *     the likelihood that colors will be missed.
+ *
+ * @return {Promise<{r: number, g: number, b: number}[]>}
+ */
+
+exports.getPalette = (sourceImage, colorCount, quality) => {
+    const palette = getPalette(sourceImage, colorCount, quality);
+    return palette;
+};
+
+/**
+ * Use the median cut algorithm provided by quantize.js
+ * to cluster similar colors.
+ *
+ * BUGGY: Function does not always return the requested amount of colors.
+ * It can be +/- 2.
+ *
  * @param {string} URL The URL or file path to an image. In case of a URL,
  *     it is subject to the cross origin policy.
  *
