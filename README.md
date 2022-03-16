@@ -60,7 +60,7 @@ const { getColorFromURL } = require('color-thief-node');
 const { getPaletteFromURL } = require('color-thief-node');
 
 (async () => {
-    const colorPallete = await getPaletteFromURL(imageURL);
+    const colorPalette = await getPaletteFromURL(imageURL);
 })();
 ```
 
