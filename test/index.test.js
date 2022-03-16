@@ -20,7 +20,7 @@ const chalk = require('chalk');
                 'Dominant Color:',
                 chalk.rgb(r, g, b)(`rgb(${r}, ${g}, ${b})`)
             );
-            console.log('Color Pallete:\n', colorPalette);
+            console.log('Color Palette:\n', colorPalette);
         }
     } catch (error) {
         console.error(error);
